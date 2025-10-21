@@ -1,0 +1,63 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    //"verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "pretty": true,
+    "noEmit": false,
+    "noEmitOnError": true,
+    "emitDeclarationOnly": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "downlevelIteration": true,
+    "useUnknownInCatchVariables": false,
+    "allowJs": false,
+    "checkJs": false,
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@tests/*": ["./tests/*"]
+    },
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noLib": false,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
